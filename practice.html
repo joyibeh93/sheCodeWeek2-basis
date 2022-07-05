@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+
+        h1,h2{
+            text-align: center;
+        }
+        h1{
+            color:#F1619A ;
+            text-transform: uppercase;
+        }
+        h2{
+            border: 1px solid #343a40;
+            padding: 12px;
+            font-size: 20px;
+            border-radius: 10px;
+            color: #fff;
+            background-color: #007bff;
+        }
+        img{
+            display: block;
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 100%;
+
+        }
+        p{
+          line-height: 1.5;
+          font-size: 18px; 
+          text-align: center; 
+          margin: 20px auto;
+          line-height: 1.5;
+        }
+        .learnmore{
+            display: block;
+            text-decoration: none;
+            margin-top: 20px;
+            color: #885df1;
+            font-size: 24px;
+            font-weight: 700;
+            text-transform: uppercase;
+           }
+        .learnmore:hover{
+            text-decoration: underline;
+            margin-bottom: 10px;
+           
+        }
+        .container{
+            width: 600px;
+            margin: 0 auto;
+            padding: 30px 60px ;
+
+        }
+        button{
+            display: block;
+            margin: 0 auto;
+            padding: 20px 30px;
+            color: #fff;
+            background-color: #885df1;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+            border: none;
+            font-size: 15px;
+            margin-top: 30px;
+            transition: all 200ms ease-in-out;
+        }
+        button:hover{
+            opacity: 0.9;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            I Love Programming 🤗
+        </h1>
+        <h2>
+            Especially Web Development
+        </h2>
+        <img src="./computer.jpg" alt="computer" srcset="">
+        <p>
+            Computer programming is the process of performing a particular computation usually by designing and building an executable computer program.
+            Computer programming is the process that professionals use to write code that instructs how a computer, application or software program performs. At its most basic, 
+            computer programming is a set of instructions to facilitate specific actions.
+    
+            <br>
+            <a href="https://en.wikipedia.org/wiki/Computer_program" target="_blank" rel="noopener noreferrer" class="learnmore">Learn more about Programming</a>
+        </p>
+        <button>
+            🙅 More about Programming
+        </button>
+        <p>This page was built by Ibeh Joy Chinwendu</p>
+    </div>
+
+<script>
+    function program(){
+        name=prompt
+            ("what is your name?");
+        email=prompt("please enter your email address?");
+        favorite=prompt("what is your Favourite programing Language?");
+        message=alert(" Thank you " + name + "i hope you have fun learning it !!, we will keep in touch 💞");
+        
+    }
+    let button=document.querySelector('button');
+    button.addEventListener("click", program) 
+
+</script>
+</body>
+</html>
